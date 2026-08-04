@@ -1,0 +1,29 @@
+.footer{
+    background-color: #BCDDFE;
+    /* height:10vw; */
+}
+#information-section{
+    margin-left: -2vw;
+}
+#service-section{
+    margin-left:-2vw;
+}
+#account-section{
+    margin-left:-2vw;
+}
+li{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    color: rgb(31, 31, 31);
+}
+hr{
+    width:100%;
+    color: white;
+    border: 1px solid white;
+}
+.bottom{
+    color: rgb(75, 75, 75);
+    font-size:16px;
+}

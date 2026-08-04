@@ -1,0 +1,44 @@
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  top: 35%;
+  left: 8%;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.hero-content h2 {
+  font-size: 36px;
+}
+
+.product-section {
+  margin-top: -80px;
+  position: relative;
+  z-index: 10;
+}
+
+.product-card {
+  text-align: center;
+  padding: 10px;
+}
+
+.price {
+  color: #40bfff;
+  font-weight: bold;
+}
