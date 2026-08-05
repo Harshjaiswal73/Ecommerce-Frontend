@@ -8,7 +8,7 @@ import Orders from "../pages/admin/orders/Orders";
 import Add from "../pages/admin/products/Add";
 import Product from "../pages/admin/products/Product";
 import Customers from "../pages/admin/users/Customers";
-import Chart from "../pages/admin/dashboard/chart";
+import Chart from "../pages/admin/dashboard/Chart";
 const AdminRoutes = () =>{
 
     const token = localStorage.getItem("token");
