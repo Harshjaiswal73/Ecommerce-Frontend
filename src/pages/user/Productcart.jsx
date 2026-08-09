@@ -15,7 +15,7 @@ function Productcart() {
                 console.log("UserId:", userId);
 
                 const response = await axios.get(
-                    `http://localhost:8080/api/cart/get-cart-product/${userId}`,
+                    `https://backend-ecommerce-3g3a.onrender.com/api/cart/get-cart-product/${userId}`,
                     {
                         headers: {
                             Authorization: `Bearer ${token}`,
