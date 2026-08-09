@@ -34,7 +34,7 @@ const Orders = () => {
 const fetchOrders = async () => {
   try {
     const response = await axios.get(
-      "http://localhost:8080/admin/pannel/AllOrders",
+      "https://backend-ecommerce-3g3a.onrender.com/admin/pannel/AllOrders",
       {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -62,7 +62,7 @@ useEffect(() => {
     const token = localStorage.getItem("token");
 
     try {
-       const response = await axios.put(`http://localhost:8080/admin/pannel/orderStatusUpdate/${orderId}`,
+       const response = await axios.put(`https://backend-ecommerce-3g3a.onrender.com/admin/pannel/orderStatusUpdate/${orderId}`,
         {
           orderStatus : status
         },
