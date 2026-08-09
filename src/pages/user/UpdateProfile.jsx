@@ -22,7 +22,7 @@ function UpdateProfile() {
       try{
         const token = localStorage.getItem("token");
 
-        const response = await axios.get("http://localhost:8080/userprofile/showprofile",
+        const response = await axios.get("https://backend-ecommerce-3g3a.onrender.com/userprofile/showprofile",
           {
             headers:{
               Authorization : `Bearer ${token}`
@@ -51,7 +51,7 @@ function UpdateProfile() {
     e.preventDefault();
     try{
        const token = localStorage.getItem("token");
-       const response = await axios.put("http://localhost:8080/userprofile/updateprofile",formData,
+       const response = await axios.put("https://backend-ecommerce-3g3a.onrender.com/userprofile/updateprofile",formData,
         {
           headers:{
             Authorization : `Bearer ${token}`
