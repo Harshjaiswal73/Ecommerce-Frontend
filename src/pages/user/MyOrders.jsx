@@ -8,7 +8,7 @@ function MyOrders(){
        try{
           const token = localStorage.getItem("token");
           // const useId = localStorage.getItem("userId");
-          const response = await axios.get("http://localhost:8080/api/order/myorders",
+          const response = await axios.get("https://backend-ecommerce-3g3a.onrender.com/api/order/myorders",
             {
               headers:{
                 Authorization: `Bearer ${token}`,
