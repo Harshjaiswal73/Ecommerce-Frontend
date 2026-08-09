@@ -19,7 +19,7 @@ function Dashboard() {
       try{
         setLoading(true);
 
-        const response = await axios.get('http://localhost:8080/admin/pannel/TotalUserProduct',
+        const response = await axios.get('https://backend-ecommerce-3g3a.onrender.com/admin/pannel/TotalUserProduct',
           {
             headers: {
             Authorization: `Bearer ${token}`
