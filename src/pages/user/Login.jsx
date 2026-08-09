@@ -17,7 +17,7 @@ function Login (){
         e.preventDefault();
 
         try {
-            const response = await axios.post("http://localhost:8080/api/auth/login",
+            const response = await axios.post("https://backend-ecommerce-3g3a.onrender.com/api/auth/login",
                 {
                     mobileNumber: mobileNumber,
                     password: password
