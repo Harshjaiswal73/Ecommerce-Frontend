@@ -23,7 +23,7 @@ function Product(){
     const[products, setproducts] = useState([]);
 
     useEffect(()=>{
-      axios.get(`http://localhost:8080/api/upload/allProduct`)
+      axios.get(`https://backend-ecommerce-3g3a.onrender.com/api/upload/allProduct`)
       .then(res =>{
         console.log(res.data);
         setproducts(res.data);
@@ -38,7 +38,7 @@ function Product(){
 
     const deleteProduct = async(id) =>{
       try {
-           await axios.delete(`http://localhost:8080/api/upload/product/${id}`,
+           await axios.delete(`https://backend-ecommerce-3g3a.onrender.com/api/upload/product/${id}`,
             {
               headers:{
                 Authorization : `Bearer ${token}`
