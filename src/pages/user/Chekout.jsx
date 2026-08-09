@@ -15,7 +15,7 @@ function Checkout(){
         try{
           const token = localStorage.getItem("token");
 
-          const response = await axios.get("http://localhost:8080/api/cart/checkout",
+          const response = await axios.get("https://backend-ecommerce-3g3a.onrender.com/api/cart/checkout",
             {
               headers:{
                 Authorization: `Bearer ${token}`
@@ -43,7 +43,7 @@ function Checkout(){
     const handlePlaceOrder = async () =>{
        try {
         const token = localStorage.getItem("token");
-        const response = await axios.post("http://localhost:8080/api/order/place-order",
+        const response = await axios.post("https://backend-ecommerce-3g3a.onrender.com/api/order/place-order",
           {},
           {
             headers:{
