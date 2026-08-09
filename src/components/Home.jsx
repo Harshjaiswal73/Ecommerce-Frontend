@@ -27,10 +27,10 @@ function Home() {
   //   });
   // },[]);
   useEffect(() => {
-  let url = "http://localhost:8080/api/auth/products";
+  let url = "https://backend-ecommerce-3g3a.onrender.com/api/auth/products";
 
   if (keyword) {
-    url = `http://localhost:8080/api/auth/search?keyword=${keyword}`;
+    url = `https://backend-ecommerce-3g3a.onrender.com/api/auth/search?keyword=${keyword}`;
   }
 
   axios
