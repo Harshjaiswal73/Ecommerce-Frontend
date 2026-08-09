@@ -21,7 +21,7 @@ function Register(){
         e.preventDefault();
 
         try {
-            const response = await axios.post("http://localhost:8080/api/auth/register",
+            const response = await axios.post("https://backend-ecommerce-3g3a.onrender.com/api/auth/register",
                 {
                     firstname : firstname,
                     lastname : lastname,
