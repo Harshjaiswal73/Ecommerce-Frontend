@@ -27,7 +27,7 @@ function Add() {
       formData.append("price", price);
 
       const response = await axios.post(
-        "http://localhost:8080/api/upload/addproduct",
+        "https://backend-ecommerce-3g3a.onrender.com/api/upload/addproduct",
         formData,
         {
           headers: {
