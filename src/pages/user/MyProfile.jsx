@@ -12,7 +12,7 @@ function MyProfile() {
           try {
               const token = localStorage.getItem("token");
 
-              const response = await axios.get(`http://localhost:8080/userprofile/showprofile`,
+              const response = await axios.get(`https://backend-ecommerce-3g3a.onrender.com/userprofile/showprofile`,
               {
                   headers: {
                     Authorization: `Bearer ${token}`,
