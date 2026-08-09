@@ -19,7 +19,7 @@ function Customers(){
           try{
              const token = localStorage.getItem("token");
 
-             const response = await axios.get("http://localhost:8080/admin/pannel/AllUsers",
+             const response = await axios.get("https://backend-ecommerce-3g3a.onrender.com/admin/pannel/AllUsers",
               {
                 headers:{
                    Authorization : `Bearer ${token}`
