@@ -12,7 +12,7 @@ function Product(){
     const navigate = useNavigate();
 
     useEffect(()=>{
-        axios.get(`http://localhost:8080/api/upload/product/${id}`)
+        axios.get(`https://backend-ecommerce-3g3a.onrender.com/api/upload/product/${id}`)
         .then(res =>{
             console.log(product);
             setproduct(res.data);
@@ -29,7 +29,7 @@ function Product(){
             const token = localStorage.getItem("token");
             // const firstname = localStorage.getItem("firstname");
             const response = await axios.post(
-                "http://localhost:8080/api/cart/add-to-cart",
+                "https://backend-ecommerce-3g3a.onrender.com/api/cart/add-to-cart",
                 {
                     // user :{id:},
                     product:{id:productId},
